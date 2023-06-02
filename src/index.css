@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.inlineTextPlace {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 56px 0;
+  position: relative;
+  width: 280px;
+  max-height: 492px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  border-radius: 12px;
+}
+.promptPlaceholder {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(234, 236, 240, 1);
+  width: 100%;
+  padding: 16px 16px 16px 18px;
+  background-color: white;
+}
+
+.imgComposeLogo {
+  height: 19.002222061157227px;
+  width: 19.001108169555664px;
+  left: 0px;
+  top: 0.4988861083984375px;
+  border-radius: 0px;
+}
+
+.promptInput {
+  position: relative;
+  top: -5px;
+  box-sizing: border-box;
+  border: none;
+  margin-left: 5px;
+  overflow: hidden;
+  height: 19px;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #101828;
+}
+.promptInput:focus {
+  outline: none;
+}
+
+.optionsDrop {
+  margin: 0;
+  padding: 0;
+  width: 278px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 378px;
+  list-style-type: none;
+}
+/* Light/Lines/Separator */
+
+.option {
+  width: 232px;
+  border-radius: 8px;
+  margin: 2px 12px 2px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px 8px 12px 13px;
+  color: #101828;
+  font-weight: 500;
+  font-size: 14px;
+}
+.option span,
+.option-active span {
+  margin-left: 11px;
+}
+.option:first-child {
+  width: 232px;
+  border-radius: 8px;
+  margin: 2px 12px 2px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px 8px 12px 13px;
+  background-color: rgba(244, 246, 248, 1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 86px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+/* The scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(227, 229, 234, 1);
+  border-radius: 8px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.advancedOptions {
+  font-weight: 500;
+font-size: 14px;
+  box-sizing: border-box;
+  padding: 14.5px 29px 17px 19.67px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+  background-color: white;
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(234, 236, 240, 1);
+}
+.advancedOptions span {
+  margin: 0 0 0 -40px;
+  cursor: pointer;
+}
+.ProTipPlace {
+  padding: 25px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.tip {
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #101828;
+}
+.ProTipButton {
+  font-weight: 500;
+  font-size: 12px;
+  border: 0px;
+  text-align: center;
+  color: #6941c6;
+  width: 57px;
+  height: 22px;
+  background: #f9f5ff;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.ProTipButton:hover {
+  border: 1px solid #bfbcc4;
+}
+.hitLine {
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #475467;
+}
+.enterButton {
+  width: 43px;
+  height: 24px;
+  background: #f9fafb;
+  border: 1px solid #f2f4f7;
+  border-radius: 4px;
+  padding: 0;
+  font-size: 14px;
+  color: #475467;
+  cursor: pointer;
+}
+.enterButton:hover {
+  border: 1px solid #c3cad4;
+}
